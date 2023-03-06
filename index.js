@@ -16,5 +16,13 @@ app.listen(PORT, () => {
 
   setTimeout(() => {
     cronJob.start();
-  }, 5000);
+  }, 3000);
+
+  setTimeout(() => {
+    cronJob.stop();
+  }, 6000);
+
+  setTimeout(() => {
+    cronJob.start();
+  }, 9000);
 });
