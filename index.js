@@ -10,7 +10,11 @@ const cron = require("node-cron");
 app.listen(PORT, () => {
   console.log(`LISTENING ON PORT: ${PORT}`);
 
-  cron.schedule("5 * * * * *", () => {
+  const cronJob = cron.schedule("* * * * * *", () => {
     console.log("TASK IS RUNNING");
   });
+
+  setTimeout(() => {
+    cronJob.start();
+  }, 5000);
 });
