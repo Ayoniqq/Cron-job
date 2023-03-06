@@ -4,7 +4,7 @@ const PORT = 8080;
 const cron = require("node-cron");
 
 cron.schedule("* * * * *", () => {
-  console.log("PRINT SOMETHING");
+  console.log("PRINT SOMETHING"); //PRINT SOME
 });
 
 app.listen(PORT, () => {
