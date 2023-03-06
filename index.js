@@ -10,7 +10,7 @@ cron.schedule("* * * * *", () => {
 app.listen(PORT, () => {
   console.log(`LISTENING ON PORT: ${PORT}`);
 
-  cron.schedule("* * * * * *", () => {
+  cron.schedule("10 * * * * *", () => {
     console.log("TASK IS RUNNING");
   });
 });
