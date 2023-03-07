@@ -11,7 +11,7 @@ app.listen(PORT, () => {
   console.log(`LISTENING ON PORT: ${PORT}`);
 
   const cronJob = cron.schedule("* * * * * *", () => {
-    console.log("TASK IS RUNNING"); //
+    console.log("TASK IS RUNNING"); //TASK
   });
 
   setTimeout(() => {
